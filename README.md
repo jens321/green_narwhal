@@ -4,10 +4,14 @@
 1. CISCO API (https://developer.webex.com/resource-teams.html)
 2. PayPal API
 3. Google Cloud API (firebase)
+4. Here API (https://developer.here.com/documentation)
+    - Geocode and auto search (?)miles around you - guest end
+
 
 ## H2 Frontend Technologies
 1. React
 2. Redux?
+3. PayPal Checkout (JS feature - https://developer.paypal.com/docs/checkout/quick-start/)
 
 ### H3 Frontend Features to build:
 1. Host page
@@ -23,4 +27,3 @@
 
 ## H2 Backend Technologies
 1. Firebase (Google Cloud API)
-
