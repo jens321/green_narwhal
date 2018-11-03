@@ -9,7 +9,7 @@
 1. React
 2. Redux?
 
-## H3 Frontend Features to build:
+### H3 Frontend Features to build:
 1. Host page
   a. Recipe to make
   b. List of ingredients + checkmarks for what's missing
