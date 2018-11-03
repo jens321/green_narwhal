@@ -8,3 +8,6 @@ const config = {
   storageBucket: "greennarwhal-3f58d.appspot.com",
   messagingSenderId: "188638948896"
 };
+
+firebase.initializeApp(config);
+export default firebase;
