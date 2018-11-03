@@ -1,0 +1,17 @@
+.login-header {
+  color: #855E24;
+  font-family: cooking-font;
+}
+
+.login-button {
+  color: #D38E27;
+  background-color: white;
+  border-color: #D38E27;
+  margin-bottom: 10px;
+}
+
+.login-button:hover {
+  background-color: #D38E27;
+  border-color: #D38E27;
+  transition: color 0.2s;
+}
