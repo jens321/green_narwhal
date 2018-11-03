@@ -11,7 +11,7 @@
 ## H2 Frontend Technologies
 1. React
 2. Redux?
-3. PayPal Checkout (JS feature - https://developer.paypal.com/docs/checkout/quick-start/)
+3. PayPal Checkout API (JS feature - https://developer.paypal.com/docs/checkout/quick-start/)
 
 ### H3 Frontend Features to build:
 1. Host page
