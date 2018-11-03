@@ -3,7 +3,7 @@
 ## H2 API To Use
 1. CISCO API (https://developer.webex.com/resource-teams.html)
 2. PayPal API
-3. Google Cloud API (firebase)
+3. Google Cloud API (firebase: https://firebase.google.com/docs/)
 4. Here API (https://developer.here.com/documentation)
     - Geocode and auto search (?)miles around you - guest end
 
