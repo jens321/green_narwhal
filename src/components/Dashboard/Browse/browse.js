@@ -30,6 +30,11 @@ class Browse extends Component {
     })
   }
 
+  handleClick(e) {
+    e.preventDefault()
+    window.location = '/join_party'
+  }
+
   render() {
     return (
       <div>
@@ -49,7 +54,7 @@ class Browse extends Component {
                         }
                         </ul>
                       </CardText>
-                      <Button>Join Party</Button>
+                      <Button onClick={this.handleClick}>Join Party</Button>
                     </CardBody>
                     <CardFooter>
                       Up to {item.guest_amount}
