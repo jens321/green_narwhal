@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Navbar from '../Navbar/navbar'
 import { Container, Row, Col, FormGroup, Input, Form, Label, Button} from 'reactstrap'
 import './joinParty.css'
-import { runInThisContext } from 'vm';
 
 class JoinParty extends Component {
   constructor(props) {
