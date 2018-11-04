@@ -1,0 +1,8 @@
+.ingredient-item {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #D38E27;
+  border-radius: 3px;
+  color: #D38E27;
+  display: inline-block;
+}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: cooking-font;
+  src: url('/fonts/cooking-font.ttf');
+}
+
+.home-jumbo {
+  background: url('/img/background.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.logo, .logo-lead {
+  font-family: cooking-font;
+}
+
+.logo-lead {
+  margin-top: 30px;
+  margin-left: 30px;
+}
