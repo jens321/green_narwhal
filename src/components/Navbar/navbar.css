@@ -1,3 +1,18 @@
 .navigation {
   margin-bottom: 20px; 
+  background: url('/img/background.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.navbar-header {
+  font-family: cooking-font;
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
 }

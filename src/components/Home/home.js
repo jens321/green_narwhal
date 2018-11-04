@@ -35,7 +35,7 @@ class Home extends Component {
           <Jumbotron className="home-jumbo" >
             <h1 className="logo display-3">Green Narwhal</h1>
             <h3 className="logo-lead">Stop cooking alone. Together is better.</h3>
-            <hr />
+            <hr className="home-divider" />
           </Jumbotron>
         </Row>
         <Row>

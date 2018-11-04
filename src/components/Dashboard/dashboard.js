@@ -5,7 +5,13 @@ import StartMeal from './StartMeal/startMeal'
 import Browse from './Browse/browse'
 
 class Dashboard extends Component {
+  // constructor(props) {
+  //   super(props)
 
+  //   this.state = {
+
+  //   }
+  // }
   render() {
     return (
       <div>

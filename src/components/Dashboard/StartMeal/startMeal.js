@@ -82,31 +82,34 @@ class startMeal extends Component {
 
   render() {
     return (
-      <Form>
-        <FormGroup>
-          <Label for="dish-input">Dish</Label>
-          <Input type="text" name="dish" value={this.state.dish} id="dish-input" placeholder="Your dish" onChange={this.handleDishChange}/>
-        </FormGroup>
-        <FormGroup>
-          <Label for="ingredient-input">Add Your Ingredients</Label>
-          <Input type="text" name="ingredient" value={this.state.currIngredient} id="ingredient-input" placeholder="Your ingredient" onChange={this.handleIngredientChange} onKeyPress={this.addIngredient}/>
-        </FormGroup>
-        <div className="ingredient-area">
-            { this.state.ingredients.map((item, index) => {
-                return <span key={index} className="ingredient-item">{item}</span>
-              }) 
-            }
-        </div>
-        <FormGroup>
-          <Label for="amount-input">Max Number of Guests</Label>
-          <Input type="text" name="amount" value={this.state.guest_amount} id="amount-input" placeholder="Your amount" onChange={this.handleGuestAmountChange} />
-        </FormGroup>
-        <FormGroup>
-          <Label for="price-input">Total Price</Label>
-          <Input type="text" name="price" value={this.state.price} id="price-input" placeholder="Your price" onChange={this.handlePriceChange} />
-        </FormGroup>
-        <Button onClick={this.createCookingParty}>Start Cooking Party!</Button>
-      </Form>
+      <div>
+        <h3 className="start-meal-header">Host &nbsp;Your&nbsp; Meal</h3><hr />
+        <Form>
+          <FormGroup>
+            <Label for="dish-input"><strong>Dish</strong></Label>
+            <Input type="text" name="dish" value={this.state.dish} id="dish-input" placeholder="Your dish" onChange={this.handleDishChange}/>
+          </FormGroup>
+          <FormGroup>
+            <Label for="ingredient-input"><strong>Add Your Ingredients</strong></Label>
+            <Input type="text" name="ingredient" value={this.state.currIngredient} id="ingredient-input" placeholder="Your ingredient" onChange={this.handleIngredientChange} onKeyPress={this.addIngredient}/>
+          </FormGroup>
+          <div className="ingredient-area">
+              { this.state.ingredients.map((item, index) => {
+                  return <span key={index} className="ingredient-item">{item}</span>
+                }) 
+              }
+          </div>
+          <FormGroup>
+            <Label for="amount-input"><strong>Max Number of Guests</strong></Label>
+            <Input type="text" name="amount" value={this.state.guest_amount} id="amount-input" placeholder="Your amount" onChange={this.handleGuestAmountChange} />
+          </FormGroup>
+          <FormGroup>
+            <Label for="price-input"><strong>Total Price For Meal</strong></Label>
+            <Input type="text" name="price" value={this.state.price} id="price-input" placeholder="Your price" onChange={this.handlePriceChange} />
+          </FormGroup>
+          <Button onClick={this.createCookingParty}>Start Cooking Party!</Button>
+        </Form>
+      </div>
     )
   }
 }

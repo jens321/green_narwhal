@@ -33,15 +33,15 @@ class NavigationBar extends Component {
   render() {
     return (
       <Navbar className="navigation" color="light" light expand="md">
-        <NavbarBrand href="#">Green Narwhal</NavbarBrand>
+        <NavbarBrand href="#"><h1 className="navbar-header">Green Narwhal</h1></NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#">Your Profile</NavLink>
+                <NavLink href="#" className="nav-link">Your Profile</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#" onClick={this.signOut}>Sign Out</NavLink>
+                <NavLink href="#" className="nav-link" onClick={this.signOut}>Sign Out</NavLink>
               </NavItem>
             </Nav>
         </Collapse>

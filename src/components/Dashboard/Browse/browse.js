@@ -33,10 +33,11 @@ class Browse extends Component {
   render() {
     return (
       <div>
+        <h3 className="browse-header">Active Cooking Parties</h3><hr />
       {
         this.state.activeParties.map((item, index) => {
           return <Card className="card-meal" key={index}>
-                    <CardHeader>{item.host}</CardHeader>
+                    <CardHeader className="card-header"><strong>{item.host}</strong></CardHeader>
                     <CardBody>
                       <CardTitle>{item.dish}</CardTitle>
                       <CardText>

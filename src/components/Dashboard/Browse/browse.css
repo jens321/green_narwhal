@@ -1,3 +1,14 @@
 .card-meal {
   margin-bottom: 20px;
+  box-shadow: 3px 3px 30px 3px #A8A7A6;
+}
+
+.browse-header {
+  color: #D38E27;
+  font-family: cooking-font;
+}
+
+.card-header {
+  background-color: #D38E27;
+  color: white;
 }
