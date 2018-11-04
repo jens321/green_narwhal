@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Collapse, Navbar, NavbarBrand, NavItem, NavLink, NavbarToggler, Nav } from 'reactstrap'
 import firebase from '../../backend/firebase'
+import './navbar.css'
 
 class NavigationBar extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ class NavigationBar extends Component {
 
   render() {
     return (
-      <Navbar color="light" light expand="md">
+      <Navbar className="navigation" color="light" light expand="md">
         <NavbarBrand href="#">Green Narwhal</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>

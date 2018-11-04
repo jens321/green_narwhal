@@ -20,6 +20,21 @@ class SignupForm extends Component {
     this.handleSignup = this.handleSignup.bind(this)
   }
 
+  componentDidMount () {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        user.updateProfile({displayName: this.state.full_name})
+            .then(() => {
+              window.location = '/dashboard'
+            })
+            .catch((err) => {
+              console.log(err)
+            })
+      }
+    })
+  }
+
+
   handleClick (e) {
     this.props.login()
   }
@@ -32,6 +47,7 @@ class SignupForm extends Component {
   }
 
   handleSignup (e) {
+    e.preventDefault()
     firebase.auth()
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .catch((err) => {
@@ -39,7 +55,6 @@ class SignupForm extends Component {
                 err: err.message
               })
             })
-
   }
 
   render () {
@@ -63,7 +78,7 @@ class SignupForm extends Component {
           {
             (this.state.err) ? <Alert color="danger">{this.state.err}</Alert> : ""
           }
-          <Button className="signup-button" onClick={this.handleSignup}>Signup</Button>
+          <Button className="signup-button" type="submit" onClick={this.handleSignup}>Signup</Button>
           <p>Already have an account? <a href="#" onClick={this.handleClick}>Login here.</a></p>
         </Form>
       </div>

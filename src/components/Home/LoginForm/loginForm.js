@@ -19,14 +19,6 @@ class LoginForm extends Component {
     this.login = this.login.bind(this)
   }
 
-  componentDidMount () {
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        window.location = '/dashboard'
-      }
-    })
-  }
-
   changeInput(e) {
     this.setState({
       err: "",
@@ -41,6 +33,9 @@ class LoginForm extends Component {
   login() {
     firebase.auth()
             .signInWithEmailAndPassword(this.state.email, this.state.password)
+            .then(() => {
+              window.location = '/dashboard'
+            })
             .catch((err) => {
               this.setState({
                 err: err.message
